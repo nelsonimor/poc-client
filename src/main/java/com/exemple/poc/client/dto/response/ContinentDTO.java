@@ -1,9 +1,18 @@
 package com.exemple.poc.client.dto.response;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class ContinentDTO {
 	
 	private int id;
-	private String code,name;
+	
+	@Size(min = 2,max = 2)
+	private String code;
+	
+	@Pattern(regexp = "^[a-zA-Z&éç\\- ]*$")
+	@Size(min = 2,max = 60)
+	private String name;
 	
 	public ContinentDTO() {
 		

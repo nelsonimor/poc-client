@@ -9,7 +9,7 @@ public class CityDTO {
 	
 	private int id;
 	
-	@Pattern(regexp = "^([a-zA-Z\\u0080-\\u024F]+(?:. |-| |'))*[a-zA-Z\\u0080-\\u024F]*$")
+	@Pattern(regexp = "^[a-zA-Z&ιθη'αν\\- ]*$")
 	@Size(min = 2,max = 60)
 	private String name;
 	

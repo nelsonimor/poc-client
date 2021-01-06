@@ -1,16 +1,24 @@
 package com.exemple.poc.client.dto.response;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class CountryDTO {
 	
 	private int id;
+	
+	@Pattern(regexp = "^[a-zA-Z&éç\\- ]*$")
+	@Size(min = 3,max = 60)
 	private String name;
+	
+	@Size(min = 2,max = 2)
 	private String codeiso2;
+	
+	@Size(min = 3,max = 3)
 	private String codeiso3;
+	
 	private String nationality;
 	private String continentName;
-	
-
-	
 	
 	public int getId() {
 		return id;
