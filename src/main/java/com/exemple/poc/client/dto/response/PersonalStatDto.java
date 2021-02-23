@@ -1,22 +1,43 @@
 package com.exemple.poc.client.dto.response;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PersonalStatDto {
 	
-	private String lastname;
-	private Double pointsAvg;
+	private PersonDTO player;
+	private StatDto globalStat;
+	private List<SeasonStatDto> seasonStatDTOs;
 	
-	public String getLastname() {
-		return lastname;
+	public void add(SeasonStatDto seasonStatDto) {
+		if(seasonStatDTOs==null)seasonStatDTOs = new ArrayList<SeasonStatDto>();
+		seasonStatDTOs.add(seasonStatDto);
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	
+
+	public StatDto getGlobalStat() {
+		return globalStat;
 	}
-	public Double getPointsAvg() {
-		return pointsAvg;
+	public void setGlobalStat(StatDto globalStat) {
+		this.globalStat = globalStat;
 	}
-	public void setPointsAvg(Double pointsAvg) {
-		this.pointsAvg = pointsAvg;
+	public PersonDTO getPlayer() {
+		return player;
 	}
+	public void setPlayer(PersonDTO player) {
+		this.player = player;
+	}
+
+
+	public List<SeasonStatDto> getSeasonStatDTOs() {
+		return seasonStatDTOs;
+	}
+
+
+	public void setSeasonStatDTOs(List<SeasonStatDto> seasonStatDTOs) {
+		this.seasonStatDTOs = seasonStatDTOs;
+	}
+
 
 
 }
