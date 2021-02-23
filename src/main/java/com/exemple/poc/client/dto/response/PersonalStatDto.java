@@ -1,6 +1,5 @@
 package com.exemple.poc.client.dto.response;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PersonalStatDto {
@@ -8,11 +7,9 @@ public class PersonalStatDto {
 	private PersonDTO player;
 	private StatDto globalStat;
 	private List<SeasonStatDto> seasonStatDTOs;
+	private List<CompetitionStatDto> competitionStatDTOs;
+	private List<PhasisStatDto> phasisStatsDTOs;
 	
-	public void add(SeasonStatDto seasonStatDto) {
-		if(seasonStatDTOs==null)seasonStatDTOs = new ArrayList<SeasonStatDto>();
-		seasonStatDTOs.add(seasonStatDto);
-	}
 	
 
 	public StatDto getGlobalStat() {
@@ -36,6 +33,18 @@ public class PersonalStatDto {
 
 	public void setSeasonStatDTOs(List<SeasonStatDto> seasonStatDTOs) {
 		this.seasonStatDTOs = seasonStatDTOs;
+	}
+	public List<CompetitionStatDto> getCompetitionStatDTOs() {
+		return competitionStatDTOs;
+	}
+	public void setCompetitionStatDTOs(List<CompetitionStatDto> competitionStatDTOs) {
+		this.competitionStatDTOs = competitionStatDTOs;
+	}
+	public List<PhasisStatDto> getPhasisStatsDTOs() {
+		return phasisStatsDTOs;
+	}
+	public void setPhasisStatsDTOs(List<PhasisStatDto> phasisStatsDTOs) {
+		this.phasisStatsDTOs = phasisStatsDTOs;
 	}
 
 
