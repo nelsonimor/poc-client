@@ -1,15 +1,32 @@
 package com.exemple.poc.client.dto.response;
 
+import java.util.Date;
+
 public class RosterItemDto {
 	
-	private String lastname;
-
-	public String getLastname() {
-		return lastname;
+	
+	private PersonDTO personDto;
+	private Date startdate;
+	private Date enddate;
+	
+	public Date getStartdate() {
+		return startdate;
+	}
+	public void setStartdate(Date startdate) {
+		this.startdate = startdate;
+	}
+	public Date getEnddate() {
+		return enddate;
+	}
+	public void setEnddate(Date enddate) {
+		this.enddate = enddate;
+	}
+	public PersonDTO getPersonDto() {
+		return personDto;
+	}
+	public void setPersonDto(PersonDTO personDto) {
+		this.personDto = personDto;
 	}
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
 
 }
