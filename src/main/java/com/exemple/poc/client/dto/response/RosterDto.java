@@ -1,12 +1,14 @@
 package com.exemple.poc.client.dto.response;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class RosterDto {
 	
 	private TeamDTO teamDto;
 	private List<RosterItemDto> items;
+	private Date startdate,enddate;
 	
 
 	public List<RosterItemDto> getItems() {
@@ -25,6 +27,18 @@ public class RosterDto {
 	}
 	public void setTeamDto(TeamDTO teamDto) {
 		this.teamDto = teamDto;
+	}
+	public Date getStartdate() {
+		return startdate;
+	}
+	public void setStartdate(Date startdate) {
+		this.startdate = startdate;
+	}
+	public Date getEnddate() {
+		return enddate;
+	}
+	public void setEnddate(Date enddate) {
+		this.enddate = enddate;
 	}
 
 }
