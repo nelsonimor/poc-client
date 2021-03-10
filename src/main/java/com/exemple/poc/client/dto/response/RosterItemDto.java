@@ -5,7 +5,7 @@ import java.util.Date;
 public class RosterItemDto {
 	
 	
-	private PersonDTO personDto;
+	private PersonDto personDto;
 	private Date startdate;
 	private Date enddate;
 	private String teamName;
@@ -25,10 +25,10 @@ public class RosterItemDto {
 	public void setEnddate(Date enddate) {
 		this.enddate = enddate;
 	}
-	public PersonDTO getPersonDto() {
+	public PersonDto getPersonDto() {
 		return personDto;
 	}
-	public void setPersonDto(PersonDTO personDto) {
+	public void setPersonDto(PersonDto personDto) {
 		this.personDto = personDto;
 	}
 	public String getTeamName() {

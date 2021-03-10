@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 
 
 
-public class CityDTO {
+public class CityDto {
 	
 	private int id;
 	

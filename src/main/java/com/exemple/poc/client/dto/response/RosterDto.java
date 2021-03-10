@@ -6,7 +6,7 @@ import java.util.List;
 
 public class RosterDto {
 	
-	private TeamDTO teamDto;
+	private TeamDto teamDto;
 	private List<RosterItemDto> items;
 	private Date startdate,enddate;
 	
@@ -22,10 +22,10 @@ public class RosterDto {
 		items.add(itemDto);
 		
 	}
-	public TeamDTO getTeamDto() {
+	public TeamDto getTeamDto() {
 		return teamDto;
 	}
-	public void setTeamDto(TeamDTO teamDto) {
+	public void setTeamDto(TeamDto teamDto) {
 		this.teamDto = teamDto;
 	}
 	public Date getStartdate() {

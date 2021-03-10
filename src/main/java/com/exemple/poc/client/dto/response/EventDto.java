@@ -1,6 +1,6 @@
 package com.exemple.poc.client.dto.response;
 
-public class EventDTO {
+public class EventDto {
 	
 	private int id;
 	private String code;

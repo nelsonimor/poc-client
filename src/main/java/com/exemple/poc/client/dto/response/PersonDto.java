@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-public class PersonDTO {
+public class PersonDto {
 	
 	private int id;
 	private String lastname;

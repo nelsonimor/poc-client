@@ -3,7 +3,7 @@ package com.exemple.poc.client.dto.response;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-public class CountryDTO {
+public class CountryDto {
 	
 	private int id;
 	

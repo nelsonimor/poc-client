@@ -1,6 +1,7 @@
 package com.exemple.poc.client.dto.response;
 
 import java.util.Date;
+import java.util.List;
 
 public class GameDto {
 	
@@ -21,6 +22,8 @@ public class GameDto {
 	private String phasisName;
 	private int phaseId;
 	private int phasisOrganizationId;
+	private List<BoxlineDto> localBoxlines;
+	private List<BoxlineDto> visitBoxlines;
 	
 	public int getId() {
 		return id;
@@ -124,6 +127,18 @@ public class GameDto {
 	}
 	public void setVisitRosterId(int visitRosterId) {
 		this.visitRosterId = visitRosterId;
+	}
+	public List<BoxlineDto> getLocalBoxlines() {
+		return localBoxlines;
+	}
+	public void setLocalBoxlines(List<BoxlineDto> localBoxlines) {
+		this.localBoxlines = localBoxlines;
+	}
+	public List<BoxlineDto> getVisitBoxlines() {
+		return visitBoxlines;
+	}
+	public void setVisitBoxlines(List<BoxlineDto> visitBoxlines) {
+		this.visitBoxlines = visitBoxlines;
 	}
 
 }

@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-public class TeamDTO {
+public class TeamDto {
 	
 	private int id;
 	
@@ -38,7 +38,7 @@ public class TeamDTO {
 	@JsonInclude(Include.NON_NULL)
 	private String type;
 	
-	public TeamDTO() {
+	public TeamDto() {
 		
 	}
 	

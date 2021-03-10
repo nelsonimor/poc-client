@@ -1,6 +1,6 @@
 package com.exemple.poc.client.dto.response;
 
-public class PhasisDTO {
+public class PhasisDto {
 
 	private int id;
 	private String name;

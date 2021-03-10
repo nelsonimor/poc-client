@@ -3,7 +3,7 @@ package com.exemple.poc.client.dto.response;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-public class ContinentDTO {
+public class ContinentDto {
 	
 	private int id;
 	
@@ -14,11 +14,11 @@ public class ContinentDTO {
 	@Size(min = 2,max = 60)
 	private String name;
 	
-	public ContinentDTO() {
+	public ContinentDto() {
 		
 	}
 	
-	public ContinentDTO(int id,String code,String name) {
+	public ContinentDto(int id,String code,String name) {
 		this.id = id;
 		this.code = code;
 		this.name = name;

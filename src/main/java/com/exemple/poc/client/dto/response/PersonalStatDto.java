@@ -4,7 +4,7 @@ import java.util.List;
 
 public class PersonalStatDto {
 	
-	private PersonDTO player;
+	private PersonDto player;
 	private StatDto globalStat;
 	private List<SeasonStatDto> seasonStatDTOs;
 	private List<CompetitionStatDto> competitionStatDTOs;
@@ -18,10 +18,10 @@ public class PersonalStatDto {
 	public void setGlobalStat(StatDto globalStat) {
 		this.globalStat = globalStat;
 	}
-	public PersonDTO getPlayer() {
+	public PersonDto getPlayer() {
 		return player;
 	}
-	public void setPlayer(PersonDTO player) {
+	public void setPlayer(PersonDto player) {
 		this.player = player;
 	}
 
