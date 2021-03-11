@@ -56,5 +56,10 @@ public class CountryDto {
 	public void setContinentName(String continentName) {
 		this.continentName = continentName;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return this.getId()==((CountryDto) obj).getId();
+	}
 
 }
