@@ -1,5 +1,7 @@
 package com.exemple.poc.client.dto.response;
 
+import java.util.Date;
+
 public class BoxlineDto {
 	
 	private int id;
@@ -26,6 +28,15 @@ public class BoxlineDto {
 	private Integer foulsProvoked;
 	private Integer minutes;
 	private boolean starter;
+	private boolean doubledouble;
+	private boolean tripledouble;
+	
+	private Date gameDate;
+	private String gameCompetitionName;
+	private String gamePhasisName;
+	private String gameLocalTeam;
+	private String gameVisitorTeam;
+	
 	
 	public int getId() {
 		return id;
@@ -165,6 +176,49 @@ public class BoxlineDto {
 	}
 	public void setThreePointShootAttempts(Integer threePointShootAttempts) {
 		this.threePointShootAttempts = threePointShootAttempts;
+	}
+
+	public Date getGameDate() {
+		return gameDate;
+	}
+	public void setGameDate(Date gameDate) {
+		this.gameDate = gameDate;
+	}
+	public String getGameCompetitionName() {
+		return gameCompetitionName;
+	}
+	public void setGameCompetitionName(String gameCompetitionName) {
+		this.gameCompetitionName = gameCompetitionName;
+	}
+	public String getGamePhasisName() {
+		return gamePhasisName;
+	}
+	public void setGamePhasisName(String gamePhasisName) {
+		this.gamePhasisName = gamePhasisName;
+	}
+	public String getGameLocalTeam() {
+		return gameLocalTeam;
+	}
+	public void setGameLocalTeam(String gameLocalTeam) {
+		this.gameLocalTeam = gameLocalTeam;
+	}
+	public String getGameVisitorTeam() {
+		return gameVisitorTeam;
+	}
+	public void setGameVisitorTeam(String gameVisitorTeam) {
+		this.gameVisitorTeam = gameVisitorTeam;
+	}
+	public boolean isDoubledouble() {
+		return doubledouble;
+	}
+	public void setDoubledouble(boolean doubledouble) {
+		this.doubledouble = doubledouble;
+	}
+	public boolean isTripledouble() {
+		return tripledouble;
+	}
+	public void setTripledouble(boolean tripledouble) {
+		this.tripledouble = tripledouble;
 	}
 
 }
